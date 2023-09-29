@@ -1,19 +1,31 @@
 import './styles/App.css'
 import { Movies } from './components/Movies'
 import { useMovie } from './hooks/useMovie'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import debounce from 'just-debounce-it'
 
 function useSearch () {
   const [query, setQuery] = useState('')
   const [error, setError] = useState(null)
+  const isFirstInput = useRef(true)
 
   useEffect(() => {
+    if (isFirstInput.current) {
+      isFirstInput.current = query === ''
+      return
+    }
+
+    if (query === '') {
+      setError('No se puede buscar una pelicula vacia.')
+      return
+    }
+    
     if (query.match(/^\d+$/)) {
       setError('No se puede buscar una pelicula con un número.')
       return
     }
 
-    if (query.length < 3 && query !== '') {
+    if (query.length < 3) {
       setError('La busqueda debe tener mas de 3 caracteres.')
       return
     }
@@ -26,24 +38,42 @@ function useSearch () {
     setError(null)
   }, [query])
 
-  return {query, setQuery, error}
+  return {query, setQuery, error, setError}
 }
 
 function App() {
-  const { movies: mappedMovies } = useMovie()
-  const { query, setQuery, error } = useSearch()
+  const [sort, setSort] = useState(false)  
+  const { query, setQuery, error, setError } = useSearch()
+  const { movies, getMovies, loading } = useMovie({ query, sort })
 
+  const debounceGetMovies = useCallback(
+    debounce(query => {
+      console.log('query')
+      getMovies({ query })
+  }, 500)
+  , [getMovies])
+  
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log({ query })
+    getMovies({ query })
+  }
+
+  const handleSort = () => {
+    setSort(!sort)
   }
 
   const handleChange = (event) => {
     const newQuery = event.target.value
+    setQuery(newQuery)
+    debounceGetMovies(newQuery)
 
     // validamos que no permita iniciar con un espacio
     if (newQuery.startsWith(' ')) return
     setQuery(event.target.value)
+  }
+
+  const handleBlur = () => {
+    setError(null)
   }
 
   return (
@@ -54,6 +84,7 @@ function App() {
         <form className='form' onSubmit={handleSubmit}>
           <input
             onChange={handleChange}
+            onBlur={handleBlur}
             name='query'
             value={query}
             type="text"
@@ -65,6 +96,11 @@ function App() {
                 : 'transparent'
             }}
           />
+          <input 
+            type="checkbox"
+            onChange={handleSort}
+            checked={sort}
+            />
           <button
             type='submit'
           >
@@ -75,7 +111,11 @@ function App() {
       </header>
 
       <main>
-        <Movies movies={mappedMovies} />
+        {
+          loading 
+            ? <p>CARGANDO...</p>
+            : <Movies movies={movies} />
+        }
       </main>
     </div>
   )
