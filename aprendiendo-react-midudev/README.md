@@ -10,7 +10,7 @@ Curso para aprender **React** basado en proyectos.
 
 ## 📹 Videos con las clases
 
-**Proyectos de distribucion gratuita realizados y elaborados por Miguel Ángel Durán (Midudev). Creditos correspondientes** 
+**Proyectos de distribucion gratuita realizados y elaborados por Miguel Ángel Durán (Midudev). Creditos correspondientes**
 **Realizado como proyectos prácticos para aprendizaje personal.**
 
 - 01: [Introducción a React](https://www.youtube.com/watch?v=7iobxzd_2wY)
