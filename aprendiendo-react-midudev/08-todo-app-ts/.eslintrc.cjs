@@ -7,7 +7,19 @@ module.exports = {
         "standard-with-typescript",
         "plugin:react/recommended"
     ],
-    "overrides": [],
+    "overrides": [
+        {
+            "env": {
+                "node": true
+            },
+            "files": [
+                ".eslintrc.{js,cjs}"
+            ],
+            "parserOptions": {
+                "sourceType": "script"
+            }
+        }
+    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
@@ -17,6 +29,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/prop-types": "off",
         "react/react-in-jsx-scope": "off"
     }
 }

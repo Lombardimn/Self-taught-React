@@ -1,10 +1,10 @@
-## Crear un TodoMVC con TypeScript
+# Crear un TodoMVC con TypeScript
 
 - [X] Inicializar proyecto con Vite
 - [X] Añadir linter para TypeScript + React
-- [ ] Añadir estilos del TodoMVC
-- [ ] Listar todos los TODOs
-- [ ] Poder borrar un TODO
+- [X] Añadir estilos del TodoMVC
+- [X] Listar todos los TODOs
+- [X] Poder borrar un TODO
 - [ ] Marcar TODO como completado
 - [ ] Añadir forma de filtrar TODOs (Footer)
 - [ ] Mostrar número de TODOs pendientes (Footer)
