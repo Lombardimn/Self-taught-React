@@ -1,13 +1,14 @@
-import { type ListOfTodos, TodoId } from '../types'
+import { type ListOfTodos, type Todo as TodoType, type TodoId } from '../types'
 import { Todo } from './Todo'
 
 // Se declara la propiedad que recibe el componente
 interface Props {
   todos: ListOfTodos
+  onToggleComplete: ({ id, completed }: Pick<TodoType, 'id' | 'completed'>) => void
   onRemoveTodo: ({ id }: TodoId) => void
 }
 
-export const Todos: React.FC<Props> = ({ todos, onRemoveTodo }) => {
+export const Todos: React.FC<Props> = ({ todos, onRemoveTodo, onToggleComplete }) => {
   return (
     <ul className='todo-list'>
       {todos.map(todo => (
@@ -19,6 +20,7 @@ export const Todos: React.FC<Props> = ({ todos, onRemoveTodo }) => {
             id={todo.id}
             title={todo.title}
             completed={todo.completed}
+            onToggleComplete={onToggleComplete}
             onRemoveTodo={onRemoveTodo}
           />
         </li>
