@@ -54,4 +54,4 @@ En resumen, la "Clean Architecture" puede hacer que tu aplicación React **sea m
 
 ## Acceso
 
-El repositorio es publico y se comprende en el marco de la licencia [**MIT**](dadsad)
+El repositorio es publico y se comprende en el marco de la licencia [**MIT**](https://github.com/Lombardimn/Self-taught-React/blob/main/react-gentleman-programming/01-lombardidev-router/LICENSE)
