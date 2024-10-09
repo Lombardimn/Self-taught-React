@@ -3,7 +3,7 @@ import { Card } from "./components/Card"
 function App() {
 
   return (
-    <main role="contentinfo">
+    <main>
       <h1>QR code component</h1>
 
       <Card image="/image-qr.png" imgAlt="QR code">
