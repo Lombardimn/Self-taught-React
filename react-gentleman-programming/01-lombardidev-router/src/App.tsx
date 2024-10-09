@@ -2,9 +2,9 @@ import { BrowserRouter, Navigate, Route } from 'react-router-dom'
 import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { RoutesWithNotFounds } from './utilities'
 import { AuthGuard, RoleGuard } from './guards'
-import { Logout } from './components/Logout'
+import { Logout } from './components'
 import { Suspense, lazy } from 'react'
-import { Dashboard } from './pages'
+  import { Dashboard } from './pages'
 import './App.css'
 
 
