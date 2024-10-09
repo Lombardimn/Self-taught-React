@@ -25,8 +25,8 @@ El desafío se basa en desarrollar este componente de código QR y lograr que se
 
 ### Enlaces
 
-- URL de la solución [Pendiente]: [URL de la solución de aquí](https://your-solution-url.com)
-- URL del sitio en vivo [Pendiente]: [URL del sitio en vivo aquí](https://your-live-site-url.com)
+- URL de la solución: [URL de la solución de aquí](https://www.frontendmentor.io/solutions/card-eleaborada-con-react-y-css-module-rWL0xQMe4r)
+- URL del sitio en vivo: [URL del sitio en vivo aquí](https://lombardidev-qr-component.netlify.app/)
 
 ## Mi proceso
 
