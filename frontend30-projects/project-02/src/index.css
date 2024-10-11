@@ -34,7 +34,8 @@ body, html {
   flex-direction: column;
   height: 100vh;
   background-color: hsl(47, 88%, 63%);
-  font-family: "Figtree", Arial, Helvetica, sans-serif
+  font-family: "Figtree", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {

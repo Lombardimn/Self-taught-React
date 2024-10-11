@@ -14,12 +14,15 @@
 
 .image {
   width: 279px;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .image img {
   width: 279px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -45,5 +48,4 @@
   background-color: hsl(47, 88%, 63%);
   padding: 4px 12px;
   border-radius: 4px;
-  
 }
