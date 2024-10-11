@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 24px;
   width: 327px;
@@ -13,14 +12,17 @@
 }
 
 .image {
-  width: 279px;
+  position: relative;
+  width: calc(100% - 48px);
+  margin-inline: 24px;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .image img {
-  width: 279px;
+  position: relative;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
@@ -31,7 +33,8 @@
   flex-direction: column;
   align-items: start;
   gap: 12px;
-  width: 279px;
+  width: calc(100% - 48px);
+  margin-inline: 24px;
 }
 
 .header-card {
@@ -44,8 +47,22 @@
 
 .activity {
   font-weight: 800;
+  font-size: .875rem;
   color: hsl(0, 0%, 7%);
   background-color: hsl(47, 88%, 63%);
   padding: 4px 12px;
   border-radius: 4px;
+}
+
+.published {
+  font-weight: 400;
+  font-size: .875rem;
+  color: hsl(0, 0%, 42%);
+}
+
+@media (width > 370px) {
+  .container {
+    width: 384px;
+    height: 522px;
+  }
 }

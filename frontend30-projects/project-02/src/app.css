@@ -1,0 +1,6 @@
+.card-title:hover,
+.card-title:focus,
+.card-title:active {
+  color:hsl(47, 88%, 63%);
+  cursor:pointer;
+}
