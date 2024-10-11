@@ -1,0 +1,18 @@
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile span {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 7%);
+}

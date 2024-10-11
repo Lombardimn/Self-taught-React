@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/Figtree-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/Figtree-Italic-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/static/Figtree-SemiBold.ttf" );
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/static/Figtree-ExtraBold.ttf" );
+  font-weight: 900;
+  font-style: normal
+}
+
+body, html {
+  padding-inline: 4px;
+  padding-top: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", Arial, Helvetica, sans-serif
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 7%);
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 7%);
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+p {
+  margin: 0;
+  font-size: .875rem;
+  color: hsl(0, 0%, 7%);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
