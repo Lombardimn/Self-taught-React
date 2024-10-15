@@ -1,4 +1,4 @@
-# Proyecto 02 - Solución de la Tarjeta de vista previa del blog
+# Proyecto 02 - Solución del Perfil Social
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d179a5f5-f488-43a1-a97b-bcd4b21bb3b9/deploy-status)](https://app.netlify.com/sites/lombardidev-social-card/deploys)
 
