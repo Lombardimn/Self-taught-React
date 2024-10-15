@@ -1,0 +1,58 @@
+{
+  "titulo": "Receta de Omelette Simple",
+  "descripcion": "Un plato fácil y rápido, perfecto para cualquier comida. Este omelette clásico combina huevos batidos cocidos a la perfección, opcionalmente rellenos con tu elección de queso, vegetales o carnes.",
+  "tiempo_preparacion": {
+    "total": {
+      "descripcion": "Total",
+      "valor": "Aproximadamente 10 minutos"
+    },
+    "preparacion": {
+      "descripcion": "Preparación",
+      "valor": "5 minutos"
+    },
+    "coccion": {
+      "descripcion": "Cocción",
+      "valor": "5 minutos"
+    }
+  },
+  "ingredientes": [
+    "2-3 huevos grandes",
+    "Sal al gusto",
+    "Pimienta al gusto",
+    "1 cucharada de mantequilla o aceite",
+    "Rellenos opcionales: queso, vegetales picados, carnes cocidas, hierbas"
+  ],
+  "instrucciones": [
+    {
+      "paso": 1,
+      "descripcion": "Batir los huevos: En un tazón, bate los huevos con una pizca de sal y pimienta hasta que estén bien mezclados. Puedes agregar una cucharada de agua o leche para una textura más esponjosa."
+    },
+    {
+      "paso": 2,
+      "descripcion": "Calentar la sartén: Coloca una sartén antiadherente a fuego medio y añade mantequilla o aceite."
+    },
+    {
+      "paso": 3,
+      "descripcion": "Cocinar el omelette: Una vez que la mantequilla se derrita y esté burbujeando, vierte los huevos. Inclina la sartén para asegurarte de que los huevos cubran uniformemente la superficie."
+    },
+    {
+      "paso": 4,
+      "descripcion": "Agregar rellenos (opcional): Cuando los huevos comiencen a cuajarse en los bordes, pero todavía estén ligeramente líquidos en el centro, espolvorea los rellenos de tu elección sobre una mitad del omelette."
+    },
+    {
+      "paso": 5,
+      "descripcion": "Doblar y servir: Mientras el omelette sigue cocinándose, levanta cuidadosamente un borde y dóblalo sobre los rellenos. Déjalo cocinar por otro minuto, luego deslízalo sobre un plato."
+    },
+    {
+      "paso": 6,
+      "descripcion": "Disfrutar: Sirve caliente, con sal y pimienta adicionales si lo prefieres."
+    }
+  ],
+  "nutricion": {
+    "calorias": "277kcal",
+    "carbohidratos": "0g",
+    "proteinas": "20g",
+    "grasas": "22g"
+  },
+  "imagen_url": "/images/image-omelette.jpeg"
+}
