@@ -1,0 +1,25 @@
+.cto {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 12px;
+  width: calc(100% - 24px);
+  overflow: hidden;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.25;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+  background:hsl(0, 0%, 20%);
+  cursor: pointer;
+}
+
+.cto:hover,
+.cto:focus,
+.cto:active {
+  transform: scale(1.02);
+  background:hsl(75, 94%, 57%);
+}

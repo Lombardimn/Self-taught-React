@@ -1,0 +1,38 @@
+html {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 12px 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
