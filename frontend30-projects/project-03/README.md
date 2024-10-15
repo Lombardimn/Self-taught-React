@@ -1,5 +1,7 @@
 # Proyecto 02 - Solución de la Tarjeta de vista previa del blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d179a5f5-f488-43a1-a97b-bcd4b21bb3b9/deploy-status)](https://app.netlify.com/sites/lombardidev-social-card/deploys)
+
 Esta es una solución al [desafío del componente Perfil Social del blog en Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación construyendo proyectos realistas.
 
 ## Tabla de contenidos
