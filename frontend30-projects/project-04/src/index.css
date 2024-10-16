@@ -34,7 +34,7 @@ strong {
   color: hsl(30, 10%, 34%);
 }
 
-ul, LI {
+ul, li {
   margin: 24px 0;
 }
 
@@ -44,4 +44,28 @@ ul, ol {
 
 li {
   margin-bottom: 12px;
+}
+
+
+@media ( width > 375px ) {
+  html {
+    padding: 5% 20%;
+    font-size: 1.25rem;
+    background-color:  hsl(330, 100%, 98%);
+  }
+
+  body {
+    padding: 32px;
+    border-radius: 32px;
+    border: 1px solid hsl(0, 0%, 90%);
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+  ul, li {
+    margin: 32px 0;
+  }
+
 }

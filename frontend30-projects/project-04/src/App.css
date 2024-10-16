@@ -9,3 +9,13 @@ main > section {
 main > section:last-child {
   border-bottom: none;
 }
+
+@media ( width > 375px ) {
+  main {
+    margin-inline: 0;
+  }
+
+  section {
+    margin-top: 24px;
+  }
+}

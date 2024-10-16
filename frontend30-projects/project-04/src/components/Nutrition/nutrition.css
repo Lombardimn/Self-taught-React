@@ -19,10 +19,17 @@ tr:last-child {
 
 th {
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
 
 td {
   font-weight: 700;
-  text-align: right;
+  text-align: left;
+}
+
+@media ( width > 375px ) {
+  .container {
+    margin: 0;
+    padding-top: 24px;
+  }
 }
