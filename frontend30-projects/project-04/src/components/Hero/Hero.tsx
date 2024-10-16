@@ -8,9 +8,9 @@ interface Props {
 
 const Hero = ({ title, description, imgUrl }: Props) => {
   return (
-    <header>
+    <header className='hero'>
       <img src={imgUrl} alt={title} />
-      <section>
+      <section className='content'>
         <h1>{title}</h1>
         <p>{description}</p>
       </section>

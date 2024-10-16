@@ -1,13 +1,21 @@
 import { IngredientItem } from "./IngredientItem"
-import './ingredientsList.css'
 
-const IngredientsList = () => {
+interface Props {
+  ingredients: string[]
+}
 
+const IngredientsList = ({ ingredients }: Props) => {
   return (
-    <div>
-      <h2>Lista de Ingredientes</h2>
-      <IngredientItem />
-    </div>
+    <section>
+      <h2>Ingredientes</h2>
+      <ul>
+        {
+          ingredients && ingredients.map((ingredient, index) => (
+            <IngredientItem key={index} ingredient={ingredient} />
+          ))
+        }
+      </ul>
+    </section>
   )
 }
 

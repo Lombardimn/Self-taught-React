@@ -8,9 +8,9 @@ interface Props {
 
 const Card = ( { title, children }: Props) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      <div>
+    <div className='card'>
+      <h2 className='card-title'>{title}</h2>
+      <div className='card-content'>
         {children}
       </div>
     </div>

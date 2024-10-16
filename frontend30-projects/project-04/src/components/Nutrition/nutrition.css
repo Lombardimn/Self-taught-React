@@ -1,0 +1,28 @@
+.container {
+  margin: 24px;
+}
+
+table {
+  width: 100%;
+  margin: 16px 0;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+  line-height: 2.5;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+th {
+  font-weight: 400;
+  text-align: left;
+}
+
+td {
+  font-weight: 700;
+  text-align: right;
+}

@@ -1,0 +1,11 @@
+main {
+  margin-inline: 24px;
+}
+
+main > section {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+main > section:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,15 @@
+.card {
+  padding: 12px;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+  color: hsl(332, 51%, 32%);
+}

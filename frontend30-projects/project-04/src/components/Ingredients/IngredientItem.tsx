@@ -1,11 +1,5 @@
-import './ingredientItem.css'
-
-const IngredientItem = () => {
-  return (
-    <div>
-      <h2>Ingrediente</h2>
-    </div>
-  )
+const IngredientItem = ({ ingredient }: { ingredient: string }) => {
+  return <li>{ingredient}</li>
 }
 
 export { IngredientItem }
